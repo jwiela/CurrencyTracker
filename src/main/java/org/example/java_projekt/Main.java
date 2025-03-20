@@ -13,7 +13,7 @@ public class Main extends Application {
         Scene scene = new Scene(loader.load(), 444, 276);
         scene.getStylesheets().add(getClass().getResource("/style.css").toExternalForm());
         primaryStage.setScene(scene);
-        primaryStage.setTitle("NBPapp");
+        primaryStage.setTitle("CurrencyTracker");
         primaryStage.show();
     }
 
