@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.java_projekt.MainPanelController">
+    <VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="10">
+        <padding>
+            <Insets left="20.0" right="20.0" top="20.0" />
+        </padding>
+      <AnchorPane prefHeight="427.0" prefWidth="725.0">
+         <children>
+            <Label fx:id="loginLabel" layoutX="180.0" layoutY="68.0" prefHeight="58.0" prefWidth="239.0" text="        LOGIN" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Bold" size="36.0" />
+               </font>
+            </Label>
+              <TextField fx:id="usernameField" layoutX="225.0" layoutY="147.0" promptText="Username" />
+              <PasswordField fx:id="passwordField" layoutX="225.0" layoutY="180.0" promptText="Password" />
+              <Label fx:id="errorLabel" layoutX="167.0" layoutY="252.0" prefHeight="18.0" prefWidth="266.0" textAlignment="CENTER" textFill="red" styleClass="centered-label"/>
+              <Button fx:id="loginButton" layoutX="225.0" layoutY="214.0" prefHeight="26.0" prefWidth="149.0" text="Login" />
+         </children>
+      </AnchorPane>
+    </VBox>
+    <VBox fx:id="mainPanel" alignment="CENTER" prefHeight="338.0" prefWidth="494.0" spacing="10" visible="false">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="198.0" prefWidth="640.0">
+         <children>
+                 <VBox fx:id="weatherInfoBox" alignment="TOP_LEFT" prefHeight="100.0" prefWidth="208.0">
+                     <padding>
+                        <Insets left="20.0" top="20.0" />
+                     </padding>
+                     <ImageView fx:id="weatherImageView" />
+                 </VBox>
+               <VBox alignment="CENTER" layoutX="185.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="190.0" prefWidth="278.0" AnchorPane.topAnchor="0.0">
+                   <Label fx:id="NBPLabel" text="Rates information are based on " textFill="WHITE">
+                  <font>
+                     <Font name="Dubai Bold" size="18.0" />
+                  </font>
+               </Label>
+                   <ImageView fx:id="NBPimageView" fitHeight="88.0" fitWidth="100.0" />
+               </VBox>
+         </children>
+      </AnchorPane>
+      <Label text="Choose currency and select date" textFill="WHITE">
+         <font>
+            <Font name="Dubai Bold" size="18.0" />
+         </font></Label>
+        <TextField fx:id="currencySymbolField" maxWidth="175.0" promptText="Currency Symbol" />
+        <DatePicker fx:id="datePicker" promptText="Select Date" />
+        <Button fx:id="viewRatesButton" text="View Rates" />
+        <Button fx:id="fetchRateButton" text="Fetch Rate" />
+    </VBox>
+</StackPane>

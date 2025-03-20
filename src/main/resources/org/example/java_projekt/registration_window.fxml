@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="276.0" prefWidth="444.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.java_projekt.RegistrationWindowController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+    <Label text="Registration" textFill="WHITE">
+      <font>
+         <Font name="Dubai Bold" size="18.0" />
+      </font></Label>
+    <TextField fx:id="usernameField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="167.0" promptText="Username" />
+    <PasswordField fx:id="passwordField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="167.0" promptText="Password" />
+    <Button fx:id="registerButton" text="Register" />
+    <Label fx:id="errorLabel_reg" textFill="red" />
+</VBox>

@@ -1,0 +1,25 @@
+.root
+{
+    -fx-background-image: url('images/main_back.jpg');
+    -fx-background-size: cover;
+}
+.button {
+    -fx-background-color: #93911c;
+    -fx-border: none;
+    -fx-color: white;
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-transition-duration: 0.4s;
+    -fx-cursor: pointer;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: #f4eb5c;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+
+.centered-label{
+    -fx-alignment: center;
+}

@@ -1,0 +1,1 @@
+weatherapi.key=1c472452cf7b4b1d955101604240706

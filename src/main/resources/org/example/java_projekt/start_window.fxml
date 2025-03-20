@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="276.0" prefWidth="444.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.java_projekt.StartWindowController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+   <AnchorPane prefHeight="236.0" prefWidth="404.0">
+      <children>
+          <Button fx:id="mainPanelButton" layoutX="283.0" layoutY="118.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="106.0" text="APP" />
+          <Button fx:id="registerButton" layoutX="283.0" layoutY="66.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="106.0" text="Register">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+               <Blend />
+            </effect></Button>
+         <Label layoutX="22.0" layoutY="66.0" prefHeight="34.0" prefWidth="239.0" text="If you don't have an account " textAlignment="CENTER" textFill="WHITE">
+            <font>
+               <Font name="Dubai Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="22.0" layoutY="118.0" prefHeight="34.0" prefWidth="239.0" text="If you're already a user" textAlignment="CENTER" textFill="WHITE">
+            <font>
+               <Font name="Dubai Bold" size="18.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+</VBox>
